@@ -7,7 +7,10 @@ const expenseRoutes = require("./routes/expense.routes");
 const app = express();
 app.use(
   cors({
-    origin: "*", // or your vercel URL
+    origin: [
+      "http://localhost:5173",
+      "https://expense-frontend-71fk9qhbz.vercel.app",
+    ],
     credentials: true,
   })
 );
