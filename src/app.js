@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
   origin: [
     // "http://localhost:5173", // local frontend
-    "https://expense-frontend-cmcdvj4af.vercel.app" // deployed frontend
+    "https://expense-frontend-sable.vercel.app" // deployed frontend
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
